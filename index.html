@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmOtor’s Transport — Site Officiel</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="assets/images/logo-farmotor.png" alt="Logo FarmOtor">
+      <h1>FarmOtor’s Transport</h1>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <nav id="nav-menu">
+      <a href="index.html">Accueil</a>
+      <a href="partenaires.html">🤝 Partenaires</a>
+      <a href="contact.html">📞 Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="assets/images/banniere-partenariat.png" alt="Bannière FarmOtor">
+      <div class="hero-text">
+        <h2>Bienvenue sur FarmOtor’s Transport</h2>
+        <p>Communauté de simulation et de transport virtuel.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 FarmOtor’s Transport — Tous droits réservés
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      menuToggle.textContent = navMenu.classList.contains('active') ? '✖' : '☰';
+    });
+  </script>
+
+</body>
+</html>
 

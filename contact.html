@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – FarmOtor’s Transport</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="assets/images/logo-farmotor.png" alt="Logo FarmOtor">
+      <h1>FarmOtor’s Transport</h1>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <nav id="nav-menu">
+      <a href="index.html">Accueil</a>
+      <a href="partenaires.html">🤝 Partenaires</a>
+      <a href="contact.html">📞 Contact</a>
+    </nav>
+  </header>
+
+  <div class="banner-image">
+    <img src="assets/images/banniere-partenariat.png" alt="Contact FarmOtor et Nice Studio FiveM">
+  </div>
+
+  <main>
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>🧭 FarmOtor’s Transport</h3>
+        <p>🌐 Site : En cours</p>
+        <p>📧 Email : <a href="mailto:farmsimulfr@gmail.com">farmsimulfr@gmail.com</a></p>
+        <p>💬 Discord : <a href="https://discord.gg/4DVYW8jkfF" target="_blank">Rejoindre</a></p>
+        <p>📸 Snapchat : <a href="https://www.snapchat.com/add/farmsimulfr89" target="_blank">@farmsimulfr89</a></p>
+        <p>📷 Instagram : <a href="https://www.instagram.com/farmsimulfr/" target="_blank">@farmsimulfr</a></p>
+      </div>
+
+      <div class="contact-card">
+        <h3>💼 NICE STUDIO FIVEM</h3>
+        <p>🌐 Site : <a href="https://www.nicestudiofivem.fr/" target="_blank">nicestudiofivem.fr</a></p>
+        <p>📧 Email : <a href="mailto:asso-contact@nicestudiofivem.fr">asso-contact@nicestudiofivem.fr</a></p>
+        <p>💬 Discord : <a href="https://discord.gg/4q5F2cherv" target="_blank">Rejoindre</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 FarmOtor’s Transport — Tous droits réservés
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      menuToggle.textContent = navMenu.classList.contains('active') ? '✖' : '☰';
+    });
+  </script>
+
+</body>
+</html>

@@ -1,93 +1,25 @@
-/* Style principal FarmOtor’s Transport */
-
-body {
+/* Bannière Partenariat */
+.banner {
+  position: relative;
+  text-align: center;
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background-color: #f8f8f8;
-  color: #222;
+  padding: 0;
 }
 
-header {
-  background-color: #001f3f;
+.banner h2 {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
   color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px;
-  flex-wrap: wrap;
+  font-size: 2.8em;
+  font-weight: bold;
+  text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
+  z-index: 2;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-container img {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-}
-
-h1 {
-  font-size: 1.5em;
-}
-
-nav {
-  display: flex;
-  gap: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: #ffb347;
-}
-
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-}
-
-.hero {
-  background: url("../images/banniere-partenariat.png") center/cover no-repeat;
-  text-align: center;
-  color: white;
-  padding: 100px 20px;
-}
-
-main {
-  padding: 30px;
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #001f3f;
-  color: white;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #001f3f;
-    text-align: center;
-  }
-
-  nav.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
